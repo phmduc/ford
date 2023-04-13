@@ -33,7 +33,89 @@ if( !empty($block['align']) ) {
 ?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
     <div class="container">
-       List Product
+        <div class="box-listproduct">
+            <div class="box-header">
+                    <p class="box-title">Dòng xe bán tải - Ford Ranger</p>
+            </div>
+            <div class="box-content">
+                <div class="row">
+                    
+                   
+                    <div class="col-6 col-md-3 my-3 col-listproduct">
+                        <div class="product_item">
+                            <div class="product-image">
+                                <a href="">
+                                    <img src="<?=  get_stylesheet_directory_uri() . '/assets/images/car.png' ?>" alt="">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h3 class="caption_name">
+                                    <a href="">Ford Ranger XL 2.0L 4x4 MT 2023</a>
+                                </h3>
+                                <div class="content-price">
+                                    <span class="price">659,000,000 đ</span>
+                                </div>
+                                <button class="btn btn_addcart  btn-primary">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 my-3 col-listproduct">
+                        <div class="product_item">
+                            <div class="product-image">
+                                <a href="">
+                                    <img src="<?=  get_stylesheet_directory_uri() . '/assets/images/car.png' ?>" alt="">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h3 class="caption_name">
+                                    <a href="">Ford Ranger XL 2.0L 4x4 MT 2023</a>
+                                </h3>
+                                <div class="content-price">
+                                    <span class="price">659,000,000 đ</span>
+                                </div>
+                                <button class="btn btn_addcart  btn-primary">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 my-3 col-listproduct">
+                        <div class="product_item">
+                            <div class="product-image">
+                                <a href="">
+                                    <img src="<?=  get_stylesheet_directory_uri() . '/assets/images/car.png' ?>" alt="">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h3 class="caption_name">
+                                    <a href="">Ford Ranger XL 2.0L 4x4 MT 2023</a>
+                                </h3>
+                                <div class="content-price">
+                                    <span class="price">659,000,000 đ</span>
+                                </div>
+                                <button class="btn btn_addcart  btn-primary">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 my-3 col-listproduct">
+                        <div class="product_item">
+                            <div class="product-image">
+                                <a href="">
+                                    <img src="<?=  get_stylesheet_directory_uri() . '/assets/images/car.png' ?>" alt="">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h3 class="caption_name">
+                                    <a href="">Ford Ranger XL 2.0L 4x4 MT 2023</a>
+                                </h3>
+                                <div class="content-price">
+                                    <span class="price">659,000,000 đ</span>
+                                </div>
+                                <button class="btn btn_addcart  btn-primary">Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <?php 
@@ -47,3 +129,5 @@ if (!function_exists('listProduct_setup'))   {
         </script>
     <?php }
 }
+
+

@@ -618,3 +618,142 @@ html {
     background-position: 0px 35.8px, 17.9px 0px;
   }
 }
+
+
+/* listproduct */
+.box-header{
+  background: #3498db;
+    padding: 0.563em 0.938em;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #fff;
+}
+.box-header .box-title{
+  color: #FFF;
+    
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.box-listproduct{
+  margin-top: 0.625em;
+}
+.product_item{
+  border: 1px solid #CCC;
+}
+.product-image {
+  position: relative;
+  padding: 0.625em;
+}
+.product-image a img{
+  width: 100%;
+}
+.caption{
+  text-align: center;
+}
+.caption_name a{
+  font-weight: bold;
+  text-decoration: none;
+  color: #222;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.content-price{
+  margin-top: 0.375em;
+}
+.caption .content-price .price {
+  color: #e31d1a;
+  font-size: 1rem;
+  font-weight: bold;
+  
+}
+.btn-primary{
+  margin-top: 0.375em;
+}
+.product_item{
+  padding-bottom: 0.938em;
+}
+.btn_addcart{
+  background-color: #3498db !important;
+  font-size: 0.875rem !important;
+  text-transform: uppercase;
+  font-weight: bold !important;
+}
+.btn_addcart:hover{
+  color: #FFF;
+    background-color: #e31d1a !important;
+  border-color: #e31d1a !important;
+}
+/* .col-listproduct{
+  padding-left: 5px !important;
+    padding-right: 5px !important;
+} */
+.caption{
+  padding: 0 0.313em;
+}
+/* .contact{
+  padding: 15px;
+} */
+.box_contact{
+  border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0.938em;
+}
+.contact-us p{
+  margin-bottom: 0;
+  padding-bottom: 0.625em;
+  color: #222222;
+  font-size: 0.875rem;
+}
+.contact-us {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.625em;
+}
+.contact-us .company-name {
+  color: #3498db;
+  position: relative;
+  display: block;
+  padding: 0.625em 0;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  font-weight: bold;
+}
+.captcha {
+  
+  display: flex !important;
+  gap: 1.25em;
+  flex-direction: row !important;
+  width: 21.5em;
+}
+.captcha a {
+  min-width: 2.75em;
+  width: 2.75em;
+  border: 0;
+  outline: none !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  border-radius: 0.5em;
+  background-color: rgba(0,0,0,.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+/* .company-name .name_item:hover{
+  color: #3498db;
+} */
+@media screen and (max-width: 500px) {
+  .captcha{
+    width: 100%;
+  }
+  .btn_contact{
+    display: block;
+    width: 100%;
+  }
+}
