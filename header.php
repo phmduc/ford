@@ -106,7 +106,33 @@
 	<main id="main" class="<?= (is_page_template('page-full.php')) ? 'w-builder' : 'container' ?>" <?php if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' style="padding-top: 57px;"'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' style="padding-bottom: 100px;"'; endif; ?>>
 			<?php if((is_page_template('page-fullHasBanner.php' ))) : ?>
 				<div class="w-banner">
-					code banner here
+					<div class="banner-item">
+						<div class="items">
+							<a href="">
+								<img src="<?=  get_stylesheet_directory_uri() . '/assets/images/banner-ford-5-2169425j23061.webp' ?>" alt="">
+							</a>
+						</div>
+						<div class="items">
+							<a href="">
+								<img src="<?=  get_stylesheet_directory_uri() . '/assets/images/banner-ford-6-2169424j23061.webp' ?>" alt="">
+							</a>
+						</div>
+						<div class="items">
+							<a href="">
+								<img src="<?=  get_stylesheet_directory_uri() . '/assets/images/banner-ford-7-2169426j23061.webp' ?>" alt="">
+							</a>
+						</div>
+						<div class="items">
+							<a href="">
+								<img src="<?=  get_stylesheet_directory_uri() . '/assets/images/banner-ford-1-2169421j23061.webp' ?>" alt="">
+							</a>
+						</div>
+						<div class="items">
+							<a href="">
+								<img src="<?=  get_stylesheet_directory_uri() . '/assets/images/banner-ford-3-2169423j23061.webp' ?>" alt="">
+							</a>
+						</div>
+					</div>
 				</div>
 			<?php endif; ?>
 		<?php
