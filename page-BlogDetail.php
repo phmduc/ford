@@ -260,6 +260,69 @@ get_header();
          <p class=" text-center"><em><u>Phía sau Ford Everest Thế Hệ Mới. Ảnh: BNEWS/TTXVN phát</u></em></p>
          <P>Các phiên bản Everest Ambiente, Sport, Titanium sử dụng động cơ diesel 2.0L turbo đơn có khả năng tương thích diesel B20 cho công suất 170PS ở 3.500 vòng/phút và mô men xoắn cực đại 405Nm ở dải vòng tua 1.750 – 2.500 vòng/phút, đi kèm hộp số tự động 6 cấp…</P>
       </div>
+      <div class="box box-voted">
+         <p>BÌNH CHỌN TIN TỨC</p>
+         <div class="content">
+            <span>Bình chọn tin tức:</span>
+            <div class="stars">
+               <form action="">
+                  <input class="star star-1" id="star-1" type="radio" name="star"/>
+                  <label class="star star-1" for="star-1"></label>
+                  <input class="star star-2" id="star-2" type="radio" name="star"/>
+                  <label class="star star-2" for="star-2"></label>
+                  <input class="star star-3" id="star-3" type="radio" name="star"/>
+                  <label class="star star-3" for="star-3"></label>
+                  <input class="star star-4" id="star-4" type="radio" name="star"/>
+                  <label class="star star-4" for="star-4"></label>
+                  <input class="star star-5" id="star-5" type="radio" name="star"/>
+                  <label class="star star-5" for="star-5"></label>
+               </form>
+            </div>
+            <div class="valueVote">
+               (<span>3.0</span> / <span>2 </span>đánh giá)
+            </div>
+         </div>
+      </div>
+      <div class="box boxCmt">
+         <p>BÌNH LUẬN</p>
+      </div>
+      <div class="box boxPosts">
+         <p>BÀI VIẾT LIÊN QUAN</p>
+         <div class="content">
+            <ul class="list">
+               <li>
+                  <a href="#">
+                     <i class="bi bi-chevron-right"></i>
+                     Vui Hè Sôi Động, Nhân Đôi Ưu Đãi Khi Mua Xe Ford - Ưu Đãi Đến 110 Triệu
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <i class="bi bi-chevron-right"></i>
+                     Cập Nhật: Bảng giá ô tô Ford tháng 4/2019 + Chi phí lăn bánh
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <i class="bi bi-chevron-right"></i>
+                     Xe bán tải tăng lệ phí trước bạ gấp 3 lần từ ngày 10/4
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <i class="bi bi-chevron-right"></i>
+                     Những kinh phí bạn phải trả khi mua xe ô tô mới tại Ford Thăng Long
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <i class="bi bi-chevron-right"></i>
+                     Mua xe Ford trả góp lãi suất thấp
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
 </div>
 <?php
 get_footer();

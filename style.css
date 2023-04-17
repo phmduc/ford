@@ -922,6 +922,9 @@ header .collapseMenu .links .listProduct a{
 
 
 /* css blog detail */
+.w-pageBlogDetail{
+  padding-bottom: 10px;
+}
 .w-pageBlogDetail h1{
   font-size: 1.15rem;
   text-transform: uppercase;
@@ -983,11 +986,82 @@ header .collapseMenu .links .listProduct a{
 .w-pageBlogDetail .contentDetail table td{
   text-align: left !important;
 }
+.w-pageBlogDetail .box p{
+  background: #3498db;
+  padding: 0.563rem 0.938rem;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 3px 3px 0 0;
+  margin: 0;
+}
+.w-pageBlogDetail .box{
+  margin-top: 1rem;
+}
+.w-pageBlogDetail .box .content{
+  padding: 10px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.w-pageBlogDetail .box-voted .content{
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.w-pageBlogDetail .boxPosts .list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+}
+.w-pageBlogDetail .boxPosts .list a{
+  color: #222;
+  padding: 5px 0;
+  display: block;
+}
+.w-pageBlogDetail .boxPosts .list a:hover{
+  color: #3498db;
+  font-weight: unset !important ;
+}
+.w-pageBlogDetail .box-voted .stars input{
+  display: none;
+}
+.w-pageBlogDetail .box-voted .stars label{
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #FFD119;
+  transition: all .2s;
+  margin: 0;
+}
+.w-pageBlogDetail .box-voted .stars label::before{
+  content: "\f588";
+  font-family: bootstrap-icons !important;
+}
+.w-pageBlogDetail .box-voted .stars label.star:hover:before{
+  content: "\F586";
+}
+input.star:checked ~ label.star:before {
+  content: "\F586";
+  color: #FFD119;
+  transition: all .25s;
+}
+/* input.star-5:checked ~ label.star:before,
+input.star-1:checked ~ label.star:before {
+  color: #FFD119; 
+} */
 @media (max-width:767px){
   .w-pageBlogDetail .contentDetail .tablePrice{
     overflow-x: auto;
   }
   .w-pageBlogDetail .contentDetail table{
     min-width: 50rem;
+  }
+  .w-pageBlogDetail .box-voted .stars label {
+    font-size: 1rem;
+  }
+  .w-pageBlogDetail .box-voted .content span,
+  .w-pageBlogDetail .box-voted .content .valueVote{
+    font-size: 0.8rem;
   }
 }
