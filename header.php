@@ -22,7 +22,61 @@
 
 <div id="wrapper">
 	<header>
-		<nav id="header" class="bg-light py-3 navbar navbar-expand-md <?php echo esc_attr( $navbar_scheme ); if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' fixed-top'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' fixed-bottom'; endif; if ( is_home() || is_front_page() ) : echo ' home'; endif; ?>">
+		<nav class="navbar-top">
+			<div class="container px-0">
+				<div class="navbar-link d-flex justify-content-between align-items-center">
+					<button type="button" class="btn btn-menu d-lg-none " data-toggle="collapse" data-target="#collapse-menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+					<ul class="links d-lg-flex d-none">
+						<li><a href="#" class="nav-link">Trang chủ</a></li>
+						<li><a href="#" class="nav-link">Giới thiệu</a></li>
+						<li class="dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sản phẩm</a>
+							<ul class="listProduct dropdown-menu">
+								<li><a href="#">Ford Territory</a></li>
+								<li><a href="#">Ford Everest</a></li>
+								<li><a href="#">Ford Ranger</a></li>
+								<li><a href="#">Ford Transit</a></li>
+								<li><a href="#">Ford Explorer</a></li>
+								<li><a href="#">Ford Ranger Raptor</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="nav-link">Tin tức</a></li>
+						<li><a href="#" class="nav-link">Liên hệ</a></li>
+					</ul>
+					<form class="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm..."
+                                aria-describedby="basic1">
+                            <div class="input-group-prepend" style="cursor: pointer;">
+                                <div class="input-group-text" id="basic1"><i class="bi bi-search"></i></div>
+                            </div>
+                        </div>
+                    </form>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="collapse collapseMenu d-lg-none"  id="collapse-menu">
+				<ul class="links d-flex">
+					<li><a href="#" class="nav-link">Trang chủ</a></li>
+					<li><a href="#" class="nav-link">Giới thiệu</a></li>
+					<li class="collapse-list">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="collapse" data-target="#collapseList" aria-expanded="false">Sản phẩm</a>
+						<ul class="listProduct collapse" id="collapseList">
+							<li><a href="#">Ford Territory</a></li>
+							<li><a href="#">Ford Everest</a></li>
+							<li><a href="#">Ford Ranger</a></li>
+							<li><a href="#">Ford Transit</a></li>
+							<li><a href="#">Ford Explorer</a></li>
+							<li><a href="#">Ford Ranger Raptor</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="nav-link">Tin tức</a></li>
+					<li><a href="#" class="nav-link">Liên hệ</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- <nav id="header" class="bg-light py-3 navbar navbar-expand-md <?php echo esc_attr( $navbar_scheme ); if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' fixed-top'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' fixed-bottom'; endif; if ( is_home() || is_front_page() ) : echo ' home'; endif; ?>">
 			<div class="container">
 				<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php
@@ -36,9 +90,9 @@
 							echo esc_attr( get_bloginfo( 'name', 'display' ) );
 						endif;
 					?>
-				</a>
+				</a> -->
 
-				<div id="navbar" class="navbar d-none d-lg-flex p-0">
+				<!-- <div id="navbar" class="navbar d-none d-lg-flex p-0">
 					<?php
 						// Loading WordPress Custom Menu (theme_location).
 						wp_nav_menu(
@@ -64,9 +118,9 @@
 					<?php
 						endif;
 					?>
-				</div>
+				</div> -->
 
-				<div class="header-btns d-none d-lg-block" role="group">
+				<!-- <div class="header-btns d-none d-lg-block" role="group">
 					<a href="" class="btn btn-secondary btn-sm">
 						Giỏ hàng <span class="badge badge-light">3</span>
 					</a>
@@ -83,12 +137,15 @@
 						<div class="menu-bar2"></div>
 						<div class="menu-bar3"></div>
 					</div>
-				</div><!-- /.Icon menu mobie & mobile cart item -->
+				</div> -->
+				<!-- /.Icon menu mobie & mobile cart item -->
 
-			</div><!-- /.container -->
-		</nav><!-- /#header -->
+			<!-- </div> -->
+			<!-- /.container -->
+		<!-- </nav> -->
+		<!-- /#header -->
 		
-		<div class="m-menu d-lg-none d-block">
+		<!-- <div class="m-menu d-lg-none d-block">
 			<?php 
 				wp_nav_menu(
 					array(
@@ -100,7 +157,8 @@
 					)
 				);
 			?>
-		</div><!-- /.Mobile menu container -->		
+		</div> -->
+		<!-- /.Mobile menu container -->		
 	</header>
 
 	<main id="main" class="<?= (is_page_template('page-full.php')) ? 'w-builder' : 'container' ?>" <?php if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' style="padding-top: 57px;"'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' style="padding-bottom: 100px;"'; endif; ?>>

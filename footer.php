@@ -15,7 +15,47 @@
 		</main><!-- /#main -->
 		<footer id="footer">	
 			<div class="container">
-				Footer here
+				<div class="row">
+					<div class="col-lg-6">
+						<h4>FORD THĂNG LONG</h4>
+						<ul class="list">
+							<li>Showroom: 105 Láng Hạ, Đống Đa, Hà Nội</li>
+							<li><strong>Hotline: 0934.668.808 - Mr.Khoa</strong></li>
+							<li>Email: <a href="#">lvkhoa@fordthanglong.com.vn</a></li>
+							<li>Website: <a href="#"> www.fordlangha.vn</a></li>
+						</ul>
+						<div class="socials d-flex">
+							<a href="#" class="icon"><i class="bi bi-facebook"></i></a>
+							<a href="#" class="icon"><i class="bi bi-google"></i></a>
+							<a href="#" class="icon"><i class="bi bi-rss-fill"></i></a>
+							<a href="#" class="icon"><i class="bi bi-diagram-3-fill"></i></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<h4 class="title" data-toggle="collapse" data-target="#collapseTitleOne" aria-expanded="false">VỀ FORD THĂNG LONG</h4>
+						<ul class="aboutFord collapse"  id="collapseTitleOne">
+							<li><a href="#">Giới thiệu</a></li>
+							<li><a href="#">Bảng giá xe Ford 2020</a></li>
+							<li><a href="#">Dịch vụ bảo hành xe tại Ford</a></li>
+							<li><a href="#">Tin tức về Ford Việt Nam</a></li>
+							<li><a href="#">Liên hệ để được tư vấn</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<h4 class="title" data-toggle="collapse" data-target="#collapseTitleTwo" aria-expanded="false">DANH MỤC XE FORD</h4>
+						<ul class="categoryFord collapse"  id="collapseTitleTwo">
+							<li><a href="#">Ford EcoSport</a></li>
+							<li><a href="#">Ford Everest</a></li>
+							<li><a href="#">Ford Ranger</a></li>
+							<li><a href="#">Ford Ranger Raptor</a></li>
+							<li><a href="#">Ford Explorer</a></li>
+							<li><a href="#">Ford Transit</a></li>
+						</ul>
+					</div>
+					<div class="copyright text-center">
+						Copyright© 2021
+					</div>
+				</div>
 			</div>
 			<!-- <section class="align-full w-footer py-4 bg-light">
 				<div class="container">
