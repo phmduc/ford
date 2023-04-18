@@ -702,7 +702,7 @@ html {
   border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    padding: 0.938em;
+    padding: 0.7em 0.4em;
 }
 .contact-us p{
   margin-bottom: 0;
@@ -756,4 +756,123 @@ html {
     display: block;
     width: 100%;
   }
+  
+}
+.w-products_list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .w-products-grid-left,
+.w-products-grid-center,
+.w-products-grid-right{
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+} */
+.w-products-grid-left p,
+.w-products-grid-center p,
+.w-products-grid-right p{
+  margin-bottom: 0;
+  display: inline;
+  line-height: 2;
+  margin-right: 0.25em;
+}
+.w-products-grid-right .tabs{
+  float: right;
+}
+.tab-item{
+  display: inline-block;
+    color: #777;
+    padding: 0.25em 0.5em;
+    border: 1px solid #ebebeb;
+    margin-left: 0.25em;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    background: #FFF;
+   
+}
+.list_item{
+  width: auto !important;
+  display: inline !important;
+}
+
+/* .tabs {
+  display: flex;
+  position: relative;
+} */
+
+.tab-icon {
+  font-size: 1.5rem;
+  width: 2em;
+  position: relative;
+  top: 0.125em;
+}
+
+.tab-item.active {
+  opacity: 1;
+
+   
+    color: #FFF;
+    border-color: #3498db;
+    background: #3498db;
+    cursor: not-allowed;
+   
+    
+
+}
+.tab-content {
+  padding: 1.75em 0;
+}
+.tab-pane {
+  color: #333;
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}
+.tab-pane h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+.product_item_content{
+  display: flex;
+  border: 1px solid #CCC;
+}
+.description p{
+  margin-bottom: 0.375em;
+  text-align: left;
+  color: #777777;
+  font-size: 0.75rem;
+}
+.product_item_content .product-image{
+  width: 40%;
+  padding: 0.625em;
+}
+.caption{
+  padding: 0.625em;
+}
+.product_item_content .caption .caption_name{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.product_item_content .caption{
+  text-align: left;
+}
+@media screen and (max-width: 500px) {
+  .w-products-grid-left p,
+  .w-products-grid-center,
+  .w-products-grid-right p{
+    display: none;
+  }
+  .w-products-grid-right .tabs {
+  float: right;
+    
+}
+option{
+  font-size: 12px;
+ 
+}
 }
