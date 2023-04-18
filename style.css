@@ -124,7 +124,27 @@ License URI: https://www.gnu.org/licenses/gpl-2.0
   --small-shadow: 0 10px 50px 0 rgb(231 230 236 / 53%);
   --medium-shadow: 0 5px 1.25rem 0 rgb(39 40 40 / 15%);
 }
-
+#wrapper{
+  position: relative;
+  
+}
+#main{
+  background-color: white;
+}
+#wrapper::before{
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/wp-content/uploads/2023/04/bg-body.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .h1,
 .h2,
 .h3,
@@ -1265,6 +1285,9 @@ header .collapseMenu .links .listProduct a{
 
 
 /* css footer */
+#footer{
+  background-color: transparent !important;
+}
 #footer .container{
   border-top: 2px solid #ccc;
   background: #f9f9f9;
