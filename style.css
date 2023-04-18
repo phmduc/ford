@@ -1676,7 +1676,7 @@ input.star-1:checked ~ label.star:before {
 .sidebar-mobi .box-2-content ul li p{
   font-weight: bold;
   color: #e31d1a;
-  font-size: .9rem;
+  font-size: .7rem;
 }
 
 .sidebar-box-3 .box-3-content .items-box-3,
@@ -1893,7 +1893,7 @@ input.star-1:checked ~ label.star:before {
   }
 
   .sidebar-mobi .accordion .card .card-body{
-    padding: .5rem;
+    padding: 0.5rem 1rem 0 1.5rem;
   }
 
   .sidebar-mobi .accordion .card button{
@@ -1916,30 +1916,29 @@ input.star-1:checked ~ label.star:before {
     font-weight: bolder;
     color: #fff;
   }
-
-  .sidebar-mobi .accordion .card button .view .hide {
-    display: none;
-    color: #3498db;
+  
+  .sidebar-mobi .card .text-left .view .hide{
+    display: block;
+    color: #145a89;
     background: #fff;
     padding: 0 0.2rem;
     border-radius: 50%;
   }
-    
-  .sidebar-mobi .accordion .card button.collapsed .view .hide {
-    display: block;
-    color: #3498db;
+  
+  .sidebar-mobi .card .text-left.collapsed .view .hide{
+    display: none;
   }
-    
-  .sidebar-mobi .accordion .card button .view .show {
+  
+  .sidebar-mobi .card .text-left .view .show{
+    display: none;
+  }
+  
+  .sidebar-mobi .card .text-left.collapsed .view .show{
     display: block;
-    color: #3498db;
+    color: #145a89;
     background: #fff;
     padding: 0 0.2rem;
     border-radius: 50%;
-  }
-    
-  .sidebar-mobi .accordion .card button.collapsed .view .show {
-    display: none;
   }
   
   .sidebar-mobi .box-3-content .items-box-3 .items-text{
@@ -1950,6 +1949,14 @@ input.star-1:checked ~ label.star:before {
     padding: 1rem;
   }
   
+  .sidebar-mobi .card .card-body .box-4-content .box-4-item .item{
+    padding: 0 1rem;
+  }
+
+  .sidebar-mobi .card .card-body .box-4-content .box-4-item .item .img a{
+    display: block;
+  }
+
   .sidebar-mobi .card .card-body .box-4-content .box-4-item .item .img a img{
     width: 100%;
     height: auto;
@@ -1963,6 +1970,7 @@ input.star-1:checked ~ label.star:before {
   .sidebar-mobi .card .card-body .box-4-content .box-4-item .item .name a{
     color: #000;
     font-weight: 600;
+    display: block;
   }
   .sidebar-mobi .card .card-body .box-4-content .box-4-item .item .name:hover a{
     color: #21759b;
