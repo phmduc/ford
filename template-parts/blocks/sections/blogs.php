@@ -32,8 +32,103 @@ if( !empty($block['align']) ) {
 
 ?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
-   <div class="container">
-        blogs
+   <div class="blogs">
+        <div class="blogs-header">
+            tin tức mới
+        </div>
+
+        <div class="blogs-list">
+            <div class="list-item">
+                <a href="">
+                    <img src="<?=  get_stylesheet_directory_uri() . '/assets/images/tt1.webp' ?>" alt="">
+                    <span class="hover-div">
+                        <span>xem tiếp</span>
+                    </span>
+                </a>
+                <div class="title">
+                    <h3>
+                        <a href="">Bảng giá xe ô tô Ford</a>
+                    </h3>
+                    <p>Bảng giá xe Ford tháng 7/2022, bên cạnh các mẫu xe Explorer, Everest, Ranger và à</p>
+                </div>
+                <a class="btt-next" href="">xem tiếp</a>
+            </div>
+            <div class="list-item">
+                <a href="">
+                    <img src="<?=  get_stylesheet_directory_uri() . '/assets/images/tt2.webp' ?>" alt="">
+                    <span class="hover-div">
+                        <span>xem tiếp</span>
+                    </span>
+                </a>
+                <div class="title">
+                    <h3>
+                        <a href="">Bảng giá xe ô tô Ford</a>
+                    </h3>
+                    <p>Bảng giá xe Ford tháng 7/2022, bên cạnh các mẫu xe Explorer, Everest, Ranger và à</p>
+                </div>
+                <a class="btt-next" href="">xem tiếp</a>
+            </div>
+            <div class="list-item">
+                <a href="">
+                    <img src="<?=  get_stylesheet_directory_uri() . '/assets/images/tt3.webp' ?>" alt="">
+                    <span class="hover-div">
+                        <span>xem tiếp</span>
+                    </span>
+                </a>
+                <div class="title">
+                    <h3>
+                        <a href="">Bảng giá xe ô tô Ford</a>
+                    </h3>
+                    <p>Bảng giá xe Ford tháng 7/2022, bên cạnh các mẫu xe Explorer, Everest, Ranger và à</p>
+                </div>
+                <a class="btt-next" href="">xem tiếp</a>
+            </div>
+            <div class="list-item">
+                <a href="">
+                    <img src="<?=  get_stylesheet_directory_uri() . '/assets/images/tt4.webp' ?>" alt="">
+                    <span class="hover-div">
+                        <span>xem tiếp</span>
+                    </span>
+                </a>
+                <div class="title">
+                    <h3>
+                        <a href="">Bảng giá xe ô tô Ford</a>
+                    </h3>
+                    <p>Bảng giá xe Ford tháng 7/2022, bên cạnh các mẫu xe Explorer, Everest, Ranger và à</p>
+                </div>
+                <a class="btt-next" href="">xem tiếp</a>
+            </div>
+            <div class="list-item">
+                <a href="">
+                    <img src="<?=  get_stylesheet_directory_uri() . '/assets/images/tt5.webp' ?>" alt="">
+                    <span class="hover-div">
+                        <span>xem tiếp</span>
+                    </span>
+                </a>
+                <div class="title">
+                    <h3>
+                        <a href="">Bảng giá xe ô tô Ford</a>
+                    </h3>
+                    <p>Bảng giá xe Ford tháng 7/2022, bên cạnh các mẫu xe Explorer, Everest, Ranger và à</p>
+                </div>
+                <a class="btt-next" href="">xem tiếp</a>
+            </div>
+            <div class="list-item">
+                <a href="">
+                    <img src="<?=  get_stylesheet_directory_uri() . '/assets/images/tt6.webp' ?>" alt="">
+                    <span class="hover-div">
+                        <span>xem tiếp</span>
+                    </span>
+                </a>
+                <div class="title">
+                    <h3>
+                        <a href="">Bảng giá xe ô tô Ford</a>
+                    </h3>
+                    <p>Bảng giá xe Ford tháng 7/2022, bên cạnh các mẫu xe Explorer, Everest, Ranger và à</p>
+                </div>
+                <a class="btt-next" href="">xem tiếp</a>
+            </div>
+        </div>
    </div>
 </section>
 <?php 

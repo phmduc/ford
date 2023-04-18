@@ -427,4 +427,40 @@ tabs.forEach((tab, index) => {
       // autoplaySpeed: 1000,
     });
   });
+
+  // BANNER
+  $('.banner-item').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>'
+  });
+
+  // SIDEBAR
+  $('.box-4-item').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 541,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 })(jQuery);
+
