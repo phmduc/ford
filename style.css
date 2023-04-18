@@ -1123,8 +1123,8 @@ html {
   }
 }
 
-/* BLOGS */
-.blogs .blogs-header{
+/* page-BLOGS */
+.page-blogs .blogs-header{
   padding: 1rem;
   margin-bottom: 1rem;
   background: #3498DB;
@@ -1135,95 +1135,50 @@ html {
   text-transform: uppercase;
 }
 
-.blogs .blogs-list{
+.page-blogs .blogs-list .list-item{
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  /* gap: 1rem; */
 }
 
-.blogs .blogs-list .list-item{
-  width: 32%;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  box-shadow: 0 3px 3px #ccc;
-}
-
-.blogs .blogs-list .list-item a{
+.page-blogs .blogs-list .list-item a{
   display: block;
+  width: 40%;
 }
 
-.blogs .blogs-list .list-item a:first-child{
+.page-blogs .blogs-list .list-item a:first-child{
   position: relative;
   transition: all .3s ease-out;
+  padding: 1rem;
 }
 
-.blogs .blogs-list .list-item a:first-child img{
+.page-blogs .blogs-list .list-item a:first-child img{
   width: 100%;
 }
 
-.blogs .blogs-list .list-item a:first-child .hover-div span{
-  text-align: center;
-  text-transform: uppercase;
-  border: 1px solid #FFF;
-  padding: 0 10px;
-  color: #FFF;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -50px;
-  min-width: 100px;
-  line-height: 32px;
-  margin-top: -16px;
-}
-.blogs .blogs-list .list-item a:first-child .hover-div{
-  -webkit-transform: scale(0.5) rotateX(180deg);
-  -moz-transform: scale(0.5) rotateX(180deg);
-  -ms-transform: scale(0.5) rotateX(180deg);
-  -o-transform: scale(0.5) rotateX(180deg);
-  transform: scale(0.5) rotateX(180deg);
-  background-color: #222;
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  width: 100%;
-  z-index: 7;
-  visibility: hidden;
-}
-.blogs .blogs-list .list-item a:first-child:hover .hover-div{
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-  -webkit-transform: scale(1) rotateX(0deg);
-  -moz-transform: scale(1) rotateX(0deg);
-  -ms-transform: scale(1) rotateX(0deg);
-  -o-transform: scale(1) rotateX(0deg);
-  transform: scale(1) rotateX(0deg);
-  visibility: visible;
+.page-blogs .blogs-list .list-item .title{
+  width: calc(60% - 5px);
+  padding: .5rem 0;
 }
 
-.blogs .blogs-list .list-item .title{
-  margin-top: 1rem;
-}
-
-.blogs .blogs-list .list-item .title h3 a{
+.page-blogs .blogs-list .list-item .title h3 a{
   color: #000;
   font-size: 1.3rem;
   margin-bottom: 1rem;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+  line-height: 1.5;
 }
-.blogs .blogs-list .list-item .title h3 a:hover{
+
+.page-blogs .blogs-list .list-item .title h3 a:hover{
   color: #3498DB;
   font-weight: 600;
 }
-.blogs .blogs-list .list-item .title p{
+.page-blogs .blogs-list .list-item .title p{
   height: 5rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1234,7 +1189,7 @@ html {
   -webkit-box-orient: vertical;
 }
 
-.blogs .blogs-list .list-item .btt-next{
+.page-blogs .blogs-list .list-item .btt-next{
   display: block;
   text-transform: uppercase;
   color: #fff;
@@ -1244,19 +1199,40 @@ html {
   background: #3498DB;
   padding: .7rem 0;
 }
-.blogs .blogs-list .list-item .btt-next:hover{
+.page-blogs .blogs-list .list-item .btt-next:hover{
   background: #e31d1a;
 }
 
 @media (max-width: 992px) {
-  .blogs .blogs-list .list-item .title h3 a{
+  .page-blogs .blogs-list .list-item .title h3 a{
     font-size: 1.1rem;
   }
 }
 
 @media (max-width: 541px) {
-  .blogs .blogs-list .list-item{
+  .page-blogs .blogs-list .list-item{
+    flex-direction: column;
+  }
+
+  .page-blogs .blogs-list .list-item a{
     width: 100%;
-    margin: .5rem 0;
+  }
+
+  .page-blogs .blogs-list .list-item .title{
+    width: 100%;
+  }
+
+  .page-blogs .blogs-list .list-item .title p{
+    display: none;
+  }
+
+  .page-blogs .blogs-list .list-item a:first-child{
+    padding: 0 1rem;
+  }
+
+  .page-blogs .blogs-list .list-item .title h3 a{
+    padding: 0 1rem;
+    border-bottom: none;
+    font-size: 1rem;
   }
 }
