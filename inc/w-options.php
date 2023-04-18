@@ -130,7 +130,7 @@ if ( wp_get_current_user()->user_email != 'weableteam@gmail.com' ) {
  *  Color paletes
 */
 
-add_action('wp_head', 'w_colors', 100);
+// add_action('wp_head', 'w_colors', 100);
 function w_colors() { 
     $colors = get_field('pallete','option');
     $primary_color = $colors['primary'];
