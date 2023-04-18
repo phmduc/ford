@@ -384,6 +384,8 @@ tabs.forEach((tab, index) => {
         x.style.display = "none";
       }
       }
+
+      
 })(jQuery);
 	
 	
@@ -462,5 +464,6 @@ tabs.forEach((tab, index) => {
       }
     ]
   });
+
 })(jQuery);
 
