@@ -17,8 +17,60 @@ function appHeight() {
 window.addEventListener("resize", appHeight);
 appHeight();
 /*--- blog--- */
-console.log("btn");
-const toggleBlogs = document.querySelectorAll(".sidebar-heading > span");
+
+
+
+
+  (function ($) {
+    $(document).ready(function () {
+      sal({
+        once: false,
+      });
+    });
+
+    $("#hamburger-menu").click(function () {
+      $(this).toggleClass("active");
+      $(".m-menu").toggleClass("show");
+    });
+  
+    // BANNER
+    console.log('123')
+    $('.banner-item').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>'
+    });
+  
+    // SIDEBAR
+    $('.box-4-item').slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>',
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 541,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+      
+
+    const toggleBlogs = document.querySelectorAll(".sidebar-heading > span");
 toggleBlogs.forEach(function (toggleBlog, index) {
   toggleBlog.addEventListener("click", function () {
     const contentElement = document.querySelectorAll(".details");
@@ -195,8 +247,7 @@ img_item.forEach((item) =>
   })
 );
 
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
+
 
 const tabs = $$(".tab-item");
 const panes = $$(".tab-pane");
@@ -224,74 +275,6 @@ if (tabs && panes && tabActive && line) {
     };
   });
 }
-
-// document.addEventListener('DOMContentLoaded', () =>
-//   requestAnimationFrame(updateTime)
-// )(
-//   (function () {
-//     const second = 1000,
-//       minute = second * 60,
-//       hour = minute * 60,
-//       day = hour * 24;
-
-//     let today = new Date(),
-//       dd = String(today.getDate()).padStart(2, '0'),
-//       mm = String(today.getMonth() + 1).padStart(2, '0'),
-//       yyyy = today.getFullYear(),
-//       nextYear = yyyy + 1,
-//       dayMonth = '09/30/',
-//       birthday = dayMonth + yyyy;
-
-//     today = mm + '/' + dd + '/' + yyyy;
-//     if (today > birthday) {
-//       birthday = dayMonth + nextYear;
-//     }
-
-//     const countDown = new Date(birthday).getTime(),
-//       x = setInterval(function () {
-//         const now = new Date().getTime(),
-//           distance = countDown - now;
-
-//         (document.getElementById('days').innerText = Math.floor(
-//           distance / day
-//         )),
-//           (document.getElementById('hours').innerText = Math.floor(
-//             (distance % day) / hour
-//           )),
-//           (document.getElementById('minutes').innerText = Math.floor(
-//             (distance % hour) / minute
-//           )),
-//           (document.getElementById('seconds').innerText = Math.floor(
-//             (distance % minute) / second
-//           ));
-//       }, 0);
-//   })()
-// );
-
-(function ($) {
-  $(document).ready(function () {
-    sal({
-      once: false,
-    });
-  });
-
-  (function ($) {
-    $(document).ready(function () {
-      sal({
-        once: false,
-      });
-    });
-
-    $("#hamburger-menu").click(function () {
-      $(this).toggleClass("active");
-      $(".m-menu").toggleClass("show");
-    });
-
-    // Loader
-    // $(window).on("load",function(){
-    // 	$(".w-loader").fadeOut("slow");
-    // });
-    // TIN
     $(document).ready(function () {
       var counter = 0;
       $(".increment").click(function () {
@@ -489,43 +472,7 @@ if (tabs && panes && tabActive && line) {
         // autoplaySpeed: 1000,
       });
     });
-  
-    // BANNER
-    $('.banner-item').slick({
-      dots: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
-      nextArrow: '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>'
-    });
-  
-    // SIDEBAR
-    $('.box-4-item').slick({
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      prevArrow: '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
-      nextArrow: '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>',
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 541,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-      
-  });
+
 
 
 
@@ -593,7 +540,6 @@ if (tabs && panes && tabActive && line) {
           percY = (posY / imgHeight) * 100,
           perc = percX + "% " + percY + "%";
       
-      //Change CSS of magnifier, move it to mouse location and change background position based on the percentages stored.
       $(".magnifier").css({
         top:posY,
         left:posX,
@@ -601,7 +547,6 @@ if (tabs && panes && tabActive && line) {
       });
     });
   }, function(){
-    //Hide the magnifier when mouse is no longer hovering over image.
     $(".magnifier").hide();
   });
   $(document).ready(function() {
@@ -612,13 +557,7 @@ if (tabs && panes && tabActive && line) {
       $(this).css('transform', 'scale(1)');
       $(this).css('cursor', 'zoom-in');
     });
-  });
-
-  })(jQuery);
+  })
 
 
-
-
-
-
-
+})(jQuery);
