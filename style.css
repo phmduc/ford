@@ -1575,6 +1575,7 @@ input.star-1:checked ~ label.star:before {
   transition: all 0.2s linear;
   background: #3498dbad;
   color: #fff;
+  top: 50%;
 }
 .w-banner .banner-item .slick-next:hover,
 .w-banner .banner-item .slick-prev:hover{
@@ -1601,6 +1602,10 @@ input.star-1:checked ~ label.star:before {
 @media (max-width: 541px) {
   .w-banner .banner-item .slick-dots li button:before{
     font-size: .5rem;
+  }
+  .w-banner .banner-item .slick-next,
+  .w-banner .banner-item .slick-prev{
+    display: none !important;
   }
 }
 
