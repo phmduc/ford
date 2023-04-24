@@ -22,11 +22,31 @@
 
 <div id="wrapper">
 	<header>
+		<div class="top">
+			<div class="container px-0">
+			<img src="/wp-content/uploads/2023/04/banner-top-ford-thang-long-1117507j23061.webp" alt="">
+
+			</div>
+		</div>
 		<nav class="navbar-top">
 			<div class="container px-0">
 				<div class="navbar-link d-flex justify-content-between align-items-center">
 					<button type="button" class="btn btn-menu d-lg-none " data-toggle="collapse" data-target="#collapse-menu" aria-expanded="false"><i class="bi bi-list"></i></button>
-					<ul class="links d-lg-flex d-none">
+					<?php
+						// Loading WordPress Custom Menu (theme_location).
+						wp_nav_menu(
+							array(
+								'theme_location' => 'main-menu',
+								'container'      => '',
+								'menu_class'     => 'navbar-nav links flex-row mr-auto',
+								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
+								'walker'         => new WP_Bootstrap_Navwalker(),
+							)
+						);
+
+						if ( '1' === $search_enabled ) :
+					?>
+					<!-- <ul class="links d-lg-flex d-none">
 						<li><a href="#" class="nav-link">Trang chủ</a></li>
 						<li><a href="#" class="nav-link">Giới thiệu</a></li>
 						<li class="dropdown">
@@ -42,7 +62,7 @@
 						</li>
 						<li><a href="#" class="nav-link">Tin tức</a></li>
 						<li><a href="#" class="nav-link">Liên hệ</a></li>
-					</ul>
+					</ul> -->
 					<form class="search">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Tìm kiếm..."
@@ -57,7 +77,9 @@
 		</nav>
 		<div class="container">
 			<div class="collapse collapseMenu d-lg-none"  id="collapse-menu">
+				
 				<ul class="links d-flex">
+				
 					<li><a href="#" class="nav-link">Trang chủ</a></li>
 					<li><a href="#" class="nav-link">Giới thiệu</a></li>
 					<li class="collapse-list">
@@ -93,20 +115,7 @@
 				</a> -->
 
 				<!-- <div id="navbar" class="navbar d-none d-lg-flex p-0">
-					<?php
-						// Loading WordPress Custom Menu (theme_location).
-						wp_nav_menu(
-							array(
-								'theme_location' => 'main-menu',
-								'container'      => '',
-								'menu_class'     => 'navbar-nav mr-auto',
-								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
-								'walker'         => new WP_Bootstrap_Navwalker(),
-							)
-						);
-
-						if ( '1' === $search_enabled ) :
-					?>
+					
 							<form class="form-inline search-form my-2 my-lg-0" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 								<div class="input-group">
 									<input type="text" name="s" class="form-control" placeholder="<?php esc_attr_e( 'Search', 'weable' ); ?>" title="<?php esc_attr_e( 'Search', 'weable' ); ?>" />

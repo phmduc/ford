@@ -249,10 +249,10 @@ img_item.forEach((item) =>
 
 
 
-const tabs = $$(".tab-item");
-const panes = $$(".tab-pane");
+const tabs = $(".tab-item");
+const panes = $(".tab-pane");
 const tabActive = $(".tab-item.active");
-const line = $(".tabs .line");
+const line = $(".tabs .line")[0];
 
 if (tabs && panes && tabActive && line) {
   requestIdleCallback(function () {
@@ -260,7 +260,7 @@ if (tabs && panes && tabActive && line) {
     line.style.width = tabActive.offsetWidth + "px";
   });
 
-  tabs.forEach((tab, index) => {
+  tabs.each((index, tab) => {
     const pane = panes[index];
 
     tab.onclick = function () {
