@@ -384,10 +384,8 @@ if (tabs && panes && tabActive && line) {
         x.style.display = "none";
       }
     }
-  })(jQuery);
-
+    
   /*Product Details*/
-  ("use strict");
   var productDetails = function () {
     $(".overview .product-image-slider").slick({
       slidesToShow: 1,
@@ -616,11 +614,7 @@ if (tabs && panes && tabActive && line) {
     });
   });
 
-
-	
-	
-
-
+  })(jQuery);
 
 
 
