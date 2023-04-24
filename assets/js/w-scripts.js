@@ -527,7 +527,96 @@ if (tabs && panes && tabActive && line) {
       ]
     });
       
-})(jQuery);
+  });
+
+
+
+  var productDetails = function () {
+      $('.product-image-slider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: false,
+          asNavFor: '.slider-nav-thumbnails',
+      });
+
+      $('.slider-nav-thumbnails').slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          asNavFor: '.product-image-slider',
+          dots: false,
+          focusOnSelect: true,
+          
+          prevArrow: '<button type="button" class="slick-prev_btn"><i class="bi bi-chevron-left"></i></button>',
+          nextArrow: '<button type="button" class="slick-next_btn"><i class="bi bi-chevron-right"></i></button>'
+      });
+
+      // Remove active class from all thumbnail slides
+      $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+
+      // Set active class to first thumbnail slides
+      $('.slider-nav-thumbnails .slick-slide').eq(0).addClass('slick-active');
+
+      // On before slide change match active thumbnail to current slide
+      $('.product-image-slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+          var mySlideNumber = nextSlide;
+          $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+          $('.slider-nav-thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
+      });
+
+     
+   
+      //Qty Up-Down
+     
+      $('.dropdown-menu .cart_list').on('click', function (event) {
+          event.stopPropagation();
+      });
+  };
+
+  //Load functions
+  $(document).ready(function () {
+      productDetails();
+  });
+  $(".magnified").hover(function(e){
+    //Store position & dimension information of image
+    var imgPosition = $(".magnify").position(),
+        imgHeight = $(".magnified").height(),
+        imgWidth = $(".magnified").width();
+    
+    //Show mangifier on hover
+    $(".magnifier").show();
+    
+    //While the mouse is moving and over the image move the magnifier and magnified image
+    $(this).mousemove(function(e){
+      //Store position of mouse as it moves and calculate its position in percent
+      var posX = e.pageX - imgPosition.left,
+          posY = e.pageY - imgPosition.top,
+          percX = (posX / imgWidth) * 100,
+          percY = (posY / imgHeight) * 100,
+          perc = percX + "% " + percY + "%";
+      
+      //Change CSS of magnifier, move it to mouse location and change background position based on the percentages stored.
+      $(".magnifier").css({
+        top:posY,
+        left:posX,
+        backgroundPosition: perc
+      });
+    });
+  }, function(){
+    //Hide the magnifier when mouse is no longer hovering over image.
+    $(".magnifier").hide();
+  });
+  $(document).ready(function() {
+    $('.zoomable').on('mouseenter', function() {
+      $(this).css('transform', 'scale(1.5)');
+      $(this).css('cursor', 'zoom-out');
+    }).on('mouseleave', function() {
+      $(this).css('transform', 'scale(1)');
+      $(this).css('cursor', 'zoom-in');
+    });
+  });
+
+
 	
 	
 
